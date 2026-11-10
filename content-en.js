@@ -67,7 +67,7 @@ window.ATLAS_CONTENT = {
       "icon": "⇄",
       "title": "‘They are an important partner.’",
       "short": "A municipality requests conference contacts for a different initiative.",
-      "story": "A partner municipality asks for conference attendees’ names, emails and job titles to invite them to its own consultation. A manager forwards the request with a Thursday deadline.",
+      "story": "A partner municipality asks for conference attendees’ names, emails and job titles to invite them to its own consultation. The Director forwards us the request and asks us to send the required data.",
       "options": [
         "I send the data — management supports the request.",
         "I hold the transfer and review the purpose and permissibility with the DPO."
@@ -84,7 +84,7 @@ window.ATLAS_CONTENT = {
       "short": "A hackathon participant asks for direct access to sensor data.",
       "story": "A student writes from a personal email address requesting database or API access to urban sensor and air-quality data. They explain they are building a useful hackathon project.",
       "options": [
-        "I verify through the organisers and clarify approval, scope and terms.",
+        "I verify through the organisers and involve the DPO to clarify the terms and scope",
         "I send the shared API key — the data contains no names."
       ],
       "correct": 0,

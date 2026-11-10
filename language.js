@@ -1,16 +1,21 @@
-// Honour an explicit language URL, otherwise remember the visitor's choice.
+// Honour an explicit language URL and remember the visitor's choice.
 (() => {
+  const language = document.documentElement.lang;
+  const explicit = new URLSearchParams(location.search).get('lang');
+  let preferred = null;
   try {
-    const language = document.documentElement.lang;
-    const explicit = new URLSearchParams(location.search).get('lang');
-    const preferred = localStorage.getItem('data-atlas-language');
-    if ((explicit === 'bg' || explicit === 'en') && explicit !== language) {
-      localStorage.setItem('data-atlas-language', explicit);
-      location.replace(document.documentElement.dataset.otherLanguageUrl + location.search + location.hash);
-    } else if (language === 'bg' && !explicit && preferred === 'en') {
-      location.replace(document.documentElement.dataset.otherLanguageUrl + location.hash);
-    } else {
-      localStorage.setItem('data-atlas-language', language);
-    }
+    preferred = localStorage.getItem('data-atlas-language');
+  } catch { /* Use the default when storage is disabled. */ }
+
+  const requested = explicit === 'bg' || explicit === 'en' ? explicit : null;
+  const useEnglishByDefault = language === 'bg' && preferred !== 'bg';
+  const target = requested ?? (useEnglishByDefault ? 'en' : language);
+  if (target !== language) {
+    location.replace(document.documentElement.dataset.otherLanguageUrl + location.search + location.hash);
+    return;
+  }
+
+  try {
+    localStorage.setItem('data-atlas-language', language);
   } catch { /* Both languages remain available when storage is disabled. */ }
 })();
