@@ -84,7 +84,7 @@ window.ATLAS_CONTENT = {
       "short": "A hackathon participant asks for direct access to sensor data.",
       "story": "A student writes from a personal email address requesting database or API access to urban sensor and air-quality data. They explain they are building a useful hackathon project.",
       "options": [
-        "I verify through the organisers and involve the DPO to clarify the terms and scope",
+        "I verify through the organisers and involve the DPO to clarify the terms and scope.",
         "I send the shared API key — the data contains no names."
       ],
       "correct": 0,
