@@ -10,11 +10,11 @@
   <link rel="alternate" hreflang="bg" href="./"><link rel="alternate" hreflang="en" href="en/">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sofia+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2"><script src="content-bg.js?v=4" defer></script><script src="app.js?v=2" defer></script>
+  <link rel="stylesheet" href="style.css?v=3"><script src="content-bg.js?v=4" defer></script><script src="app.js?v=2" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Към съдържанието</a><div id="reading-progress" aria-hidden="true"></div>
-<header class="header"><a class="brand" href="#" aria-label="Data Protection Atlas — начало"><span class="brand-icon">◈</span><span>DATA PROTECTION<span class="brand-sub">ATLAS / GATE · УЧЕБЕН НАРЪЧНИК</span></span></a><nav aria-label="Основна навигация"><a href="#scenarios">Казуси</a><a href="#classification">Данни</a><a href="#principles">GDPR</a><a href="#quiz">Тест</a></nav><div class="language-switch" role="group" aria-label="Език / Language"><a href="./?lang=bg" data-language="bg" lang="bg" aria-label="Български" aria-current="page">BG</a><a href="en/" data-language="en" lang="en" aria-label="English" >EN</a></div><a class="header-incident" href="#incident"><span class="signal"></span> Имам инцидент <span>↗</span></a><button id="menu-toggle" aria-label="Отвори менюто" aria-expanded="false">☰</button></header>
+<header class="header"><a class="brand" href="#" aria-label="Data Protection Atlas — начало"><span class="brand-icon">◈</span><span>DATA PROTECTION<span class="brand-sub">ATLAS / GATE · УЧЕБЕН НАРЪЧНИК</span></span></a><nav aria-label="Основна навигация"><a href="#scenarios">Казуси</a><a href="#classification">Данни</a><a href="#principles">GDPR</a><a href="#dpo">DPO</a><a href="#quiz">Тест</a></nav><div class="language-switch" role="group" aria-label="Език / Language"><a href="./?lang=bg" data-language="bg" lang="bg" aria-label="Български" aria-current="page">BG</a><a href="en/" data-language="en" lang="en" aria-label="English" >EN</a></div><a class="header-incident" href="#incident"><span class="signal"></span> Имам инцидент <span>↗</span></a><button id="menu-toggle" aria-label="Отвори менюто" aria-expanded="false">☰</button></header>
 <main id="main">
 <section class="hero wrap">
   <div class="hero-copy"><p class="eyebrow"><span class="tiny-dot"></span> ЗНАНИЕ, КОЕТО СЕ ПРЕВРЪЩА В НАВИК</p><h1>Голямата защита започва с <em>малките решения.</em></h1><p class="hero-description">Един отключен екран. Един грешен получател. Едно „Одобри“. Открий как ежедневните ти действия пазят хората, данните и доверието.</p><div class="hero-actions"><a class="button dark" href="#scenarios">Разгледай казусите <span>↗</span></a><a class="text-link" href="#quiz">Провери знанията си <span>→</span></a></div><div class="hero-meta"><span><b>10</b> реалистични ситуации</span><span><b>7</b> категории данни</span><span><b>1</b> по-сигурен работен ден</span></div></div>
@@ -32,8 +32,117 @@
 </div></div><p class="legal-source">Правни уточнения: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=bg" target="_blank" rel="noopener">GDPR — чл. 4–6, 9, 12, 15 и 33 ↗</a>. Обучителен наръчник; конкретните решения се съгласуват с DPO.</p></section>
 <section class="research-section" id="research"><div class="wrap research-layout"><div><p class="eyebrow">04 / ОТГОВОРНО ИЗСЛЕДВАНЕ</p><h2>Добри модели.<br><em>Проследими данни.</em></h2><p>Преди събиране, уеб извличане или обучение на AI модел провери произхода, правата и ограниченията. Публичният API също има условия.</p><span class="research-stamp">ПРОИЗХОД → ЦЕЛ → ПРАВА</span></div><div class="research-steps"><article><span>01</span><div><h3>Провери източника и правата</h3><p>Лиценз, договор, предназначение и ограничения за повторно използване. При уеб извличане провери robots.txt, заявени AI/TDM ограничения и TDMRep; техническият достъп сам по себе си не дава разрешение.</p></div></article><article><span>02</span><div><h3>Направи карта на набора</h3><p>Документирай произход, версия, лиценз, лични данни, трансформации и ограничения. В обучението са посочени Dataset Cards и форматът Croissant.</p></div></article><article><span>03</span><div><h3>Проследи риска и жизнения цикъл</h3><p>Провери представителност и отклонения, контролирай версиите и достъпа. Обсъди новата обработка с DPO за регистъра на дейностите и нуждата от оценка на въздействието.</p></div></article></div></div></section>
 <section class="section wrap" id="incident"><div class="section-heading"><div><p class="eyebrow"><span class="orange-dot"></span> 05 / БЪРЗА РЕАКЦИЯ</p><h2>Нещо се обърка.<br><em>Следващата стъпка е важна.</em></h2></div><p>Реагирай веднага, включително вечер и през уикенда. Не изчаквай пълната картина, за да подадеш първия сигнал.</p></div><div class="incident-box"><div class="incident-sidebar"><label for="incident-select">Какво се случи?</label><select id="incident-select"><option value="device">Изгубено или откраднато устройство</option><option value="email">Имейл до грешен получател</option><option value="phishing">Фишинг или въведена парола</option><option value="mfa">Неочаквани MFA известия</option></select><div class="contact-box"><span>DPO / КОНТАКТ ОТ ОБУЧЕНИЕТО</span><a href="mailto:privacy@gate-ai.eu">privacy@gate-ai.eu ↗</a><p>Уведоми и IT по утвърдения служебен канал.</p></div><p class="incident-caution">72 часа не са срок за изчакване от служителя. DPO и администраторът оценяват дали е нужно уведомяване на надзорния орган по чл. 33.</p></div><ol id="incident-steps" class="incident-steps" aria-live="polite"></ol></div></section>
-<section class="quiz-section" id="quiz"><div class="wrap quiz-layout"><div class="quiz-intro"><p class="eyebrow">06 / ТВОЯТ РЕД</p><h2>Знаеш ли<br>как да <em>реагираш?</em></h2><p>Шест въпроса, вдъхновени от семинара. Всяко решение идва с обяснение — защото разбирането е по-важно от резултата.</p><div class="quiz-art" aria-hidden="true">?<span>✓</span></div></div><div id="quiz-content" class="quiz-content" aria-live="polite"></div></div></section>
-<section class="section wrap" id="habits"><div class="section-heading"><div><p class="eyebrow">07 / ПРЕДИ ДА ПРОДЪЛЖИШ ДЕНЯ СИ</p><h2>Пет малки навика.<br><em>Всеки ден.</em></h2></div><div class="habit-counter"><span id="habit-number">0 / 5</span><span>проверени за днес</span></div></div><div class="habits"><label><input type="checkbox" data-habit="screen"><span class="check-visual"></span><span><b>Заключвам екрана</b><small>При всяко отдалечаване. Win + L / ⌃⌘Q.</small></span></label><label><input type="checkbox" data-habit="paper"><span class="check-visual"></span><span><b>Прибирам документите</b><small>Чисто бюро, празен принтер, сигурно унищожаване.</small></span></label><label><input type="checkbox" data-habit="recipient"><span class="check-visual"></span><span><b>Проверявам получателя</b><small>Пълния адрес и правата на споделената връзка.</small></span></label><label><input type="checkbox" data-habit="channel"><span class="check-visual"></span><span><b>Използвам служебни канали</b><small>Одобрени системи вместо лична поща.</small></span></label><label><input type="checkbox" data-habit="report"><span class="check-visual"></span><span><b>Сигнализирам при съмнение</b><small>IT и DPO навреме, с известните факти.</small></span></label></div><p class="small-note">Отметките се пазят само в този браузър и се нулират за новия ден. Тестът и казусите не изпращат отговорите ти.</p></section>
+<section class="dpo-section" id="dpo" aria-labelledby="dpo-title">
+  <div class="wrap">
+    <div class="section-heading dpo-heading">
+      <div>
+        <p class="eyebrow">06 / РАБОТА С DPO</p>
+        <h2 id="dpo-title">Кога да се обърнеш към DPO?</h2>
+      </div>
+      <a class="text-link dpo-contact" href="mailto:privacy@gate-ai.eu">Свържи се с DPO <span aria-hidden="true">↗</span></a>
+    </div>
+    <nav class="dpo-jump-links" aria-label="Кога да се обърнеш към DPO">
+      <a href="#dpo-immediate">Уведоми незабавно</a>
+      <a href="#dpo-approval">Получи одобрение</a>
+      <a href="#dpo-consult">Консултирай се преди действие</a>
+    </nav>
+
+    <div class="dpo-group dpo-immediate" id="dpo-immediate" aria-labelledby="dpo-immediate-title">
+      <div class="dpo-group-heading">
+        <h3 id="dpo-immediate-title">Уведоми DPO незабавно</h3>
+      </div>
+      <div class="dpo-item-grid">
+        <article class="dpo-item" data-dpo-item="suspected-breach">
+          <h4>Нарушение или съмнение за такова</h4>
+          <p>Изгубен лаптоп, грешен получател, натиснат фишинг линк, данни, оставени на показ. Уведоми DPO и запази доказателствата.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="individual-rights">
+          <h4>Някой упражнява правата си</h4>
+          <p>„Какви данни имате за мен?“, „Изтрийте данните ми“. Препрати искането незабавно към DPO. GATE има един месец за отговор.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="wrong-place">
+          <h4>Данни на неправилното място</h4>
+          <p>Лични данни на лично устройство, в личен облак или в неодобрена система.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="unowned-dataset">
+          <h4>Набор от данни без отговорник</h4>
+          <p>Данни или набор от данни без определен отговорник, без цел или без правило за съхранение.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="dpo-group dpo-approval" id="dpo-approval" aria-labelledby="dpo-approval-title">
+      <div class="dpo-group-heading">
+        <h3 id="dpo-approval-title">Необходимо е одобрение от DPO</h3>
+      </div>
+      <div class="dpo-item-grid">
+        <article class="dpo-item" data-dpo-item="restricted-data">
+          <h4>Достъп до или споделяне на строго ограничени данни</h4>
+          <p>Необходимо е изрично одобрение от DPO и правния съветник.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="retention-exceptions">
+          <h4>Изключения от графика за съхранение</h4>
+          <p>Съхраняване на данни по-дълго или изтриване по-рано от предвиденото в графика.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="end-of-retention">
+          <h4>Изтриване след изтичане на срока за съхранение</h4>
+          <p>Отговорникът за данните уведомява DPO, а DPO потвърждава, че няма правно задължение за запазване на данните (legal hold), преди да бъде изтрито каквото и да е.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="legal-holds">
+          <h4>Задължително запазване на данни по правни причини (legal hold)</h4>
+          <p>Само DPO може да го разпореди.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="dpo-group dpo-consult" id="dpo-consult" aria-labelledby="dpo-consult-title">
+      <div class="dpo-group-heading">
+        <h3 id="dpo-consult-title">Консултирай се с DPO преди действие</h3>
+      </div>
+      <div class="dpo-item-grid">
+        <article class="dpo-item" data-dpo-item="new-purpose">
+          <h4>Нова цел</h4>
+          <p>Използване на съществуващи данни за нещо, за което не са били събрани, например добавяне на участници в събитие към бюлетина.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="new-tool">
+          <h4>Нов инструмент или система, особено AI</h4>
+          <p>Нов AI инструмент, аналитична платформа, извличане на голям обем данни или съществена промяна в система. Може да е необходима оценка на въздействието върху защитата на данните (DPIA).</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="automated-decisions">
+          <h4>Автоматизирани решения или профилиране</h4>
+          <p>Например AI, който преглежда CV-та или оценява хора. Предварително е необходима DPIA.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="external-sharing">
+          <h4>Споделяне на данни извън GATE</h4>
+          <p>Партньори, доставчици, студенти, хакатони, други институти. Може да е необходим договор или споразумение за споделяне на данни.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="processing-basis">
+          <h4>Основания за обработване на данни</h4>
+          <p>Разработване на формуляр за съгласие или събиране на изрично съгласие за здравни или други чувствителни данни.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="privacy-notice">
+          <h4>Изготвяне на уведомление за поверителност</h4>
+          <p>За нов формуляр, събитие, проучване или кампания за набиране на персонал.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="direct-marketing">
+          <h4>Директен маркетинг</h4>
+          <p>Бюлетини, кампании, списъци за разпространение.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="special-categories">
+          <h4>Всякакви специални категории данни</h4>
+          <p>Здраве, биометрия, етнически произход и подобни, включително данни, изведени по косвен път.</p>
+        </article>
+        <article class="dpo-item" data-dpo-item="uncertainty">
+          <h4>Неяснота за правното основание, срока за съхранение или мерките за сигурност</h4>
+        </article>
+      </div>
+    </div>
+    <p class="small-note">Тези процедури на GATE следват трите обучителни слайда „When to contact the DPO“. DPIA означава оценка на въздействието върху защитата на данните.</p>
+  </div>
+</section>
+
+<section class="quiz-section" id="quiz"><div class="wrap quiz-layout"><div class="quiz-intro"><p class="eyebrow">07 / ТВОЯТ РЕД</p><h2>Знаеш ли<br>как да <em>реагираш?</em></h2><p>Шест въпроса, вдъхновени от семинара. Всяко решение идва с обяснение — защото разбирането е по-важно от резултата.</p><div class="quiz-art" aria-hidden="true">?<span>✓</span></div></div><div id="quiz-content" class="quiz-content" aria-live="polite"></div></div></section>
+<section class="section wrap" id="habits"><div class="section-heading"><div><p class="eyebrow">08 / ПРЕДИ ДА ПРОДЪЛЖИШ ДЕНЯ СИ</p><h2>Пет малки навика.<br><em>Всеки ден.</em></h2></div><div class="habit-counter"><span id="habit-number">0 / 5</span><span>проверени за днес</span></div></div><div class="habits"><label><input type="checkbox" data-habit="screen"><span class="check-visual"></span><span><b>Заключвам екрана</b><small>При всяко отдалечаване. Win + L / ⌃⌘Q.</small></span></label><label><input type="checkbox" data-habit="paper"><span class="check-visual"></span><span><b>Прибирам документите</b><small>Чисто бюро, празен принтер, сигурно унищожаване.</small></span></label><label><input type="checkbox" data-habit="recipient"><span class="check-visual"></span><span><b>Проверявам получателя</b><small>Пълния адрес и правата на споделената връзка.</small></span></label><label><input type="checkbox" data-habit="channel"><span class="check-visual"></span><span><b>Използвам служебни канали</b><small>Одобрени системи вместо лична поща.</small></span></label><label><input type="checkbox" data-habit="report"><span class="check-visual"></span><span><b>Сигнализирам при съмнение</b><small>IT и DPO навреме, с известните факти.</small></span></label></div><p class="small-note">Отметките се пазят само в този браузър и се нулират за новия ден. Тестът и казусите не изпращат отговорите ти.</p></section>
 <section class="sources wrap" id="sources"><div><p class="eyebrow">ПРОИЗХОД И ПРОЗРАЧНОСТ</p><h3>От семинара към ежедневието.</h3></div><div><p>Двуезична учебна адаптация по „Data Protection in Practice“: достъпния текст <i>seminar-subtitles-from-session.docx</i>, таблицата с казуси и интерактивния Studio обзор. Тетрадката посочва и <i>Data Protection Training 29102026.pptx</i>; презентацията не е прегледана пряко. Примерите са учебни, а не твърдения за реални инциденти.</p><p>Правните формулировки са уточнени спрямо GDPR и решението C‑413/23 P. Това е самостоятелна учебна адаптация, а не официална политика на GATE.</p><a class="text-link" href="https://notebook.google.com/notebook/cb498f1d-897c-44f0-a179-e2a9420a075d" target="_blank" rel="noopener">Отвори изходната тетрадка в NotebookLM ↗</a></div></section>
 </main><footer class="footer wrap"><a class="brand" href="#"><span class="brand-icon">◈</span><span>DATA PROTECTION<span class="brand-sub">МАЛКИ РЕШЕНИЯ. ГОЛЯМА ЗАЩИТА.</span></span></a><a href="#sources">Източници ↗</a><a href="#main">Обратно нагоре ↑</a></footer>
 <dialog id="scenario-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Затвори казуса">×</button><div id="scenario-content"></div></dialog>
